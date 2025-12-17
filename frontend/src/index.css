@@ -1,0 +1,110 @@
+:root{
+  --bg: #f9fafb;
+  --card-bg: #fff;
+  --text: #111827;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --surface: #f3f4f6;
+  --border: #e5e7eb;
+}
+
+[data-theme="dark"]{
+  --bg: #0b1220;
+  --card-bg: #071226;
+  --text: #e6eef8;
+  --muted: #9aa9bf;
+  --accent: #60a5fa;
+  --surface: #071826;
+  --border: #102232;
+}
+
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Card */
+.card{
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  border: 1px solid var(--border);
+}
+
+/* Buttons */
+.btn {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.btn-primary { background: var(--accent); color: white; }
+.btn-ghost { background: transparent; border: 1px solid var(--border); color: var(--text); }
+
+/* small utilities */
+.container { max-width:1100px; margin: 0 auto; padding: 20px; }
+.header { display:flex; align-items:center; gap:12px; }
+.header .spacer { margin-left:auto; color:var(--muted); font-size:13px; }
+
+/* admin layout */
+.admin-grid { display:flex; gap:16px; margin-top:12px; }
+.admin-left { flex:2; }
+.admin-right { flex:1; min-width:300px; }
+
+/* responsive for charts */
+.chart-box { height:260px; padding:12px; border-radius:8px; background:var(--surface); border:1px solid var(--border); }
+
+.stat-box {
+  flex: 1;
+  background: var(--surface);
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+/* Review Table */
+.review-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+.review-table th,
+.review-table td {
+  border: 1px solid var(--border);
+  padding: 8px 10px;
+  font-size: 14px;
+  color: var(--text);
+  background: var(--card-bg);
+}
+
+.review-table th {
+  background: var(--surface);
+  font-weight: bold;
+}
+
+/* Delete Button */
+.btn-danger {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-danger:hover {
+  background: #dc2626;
+}
+
+/* Chart containers */
+.chart-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 20px;
+}

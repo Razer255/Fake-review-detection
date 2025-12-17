@@ -1,0 +1,100 @@
+# =====================================================
+# Python
+# =====================================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python build
+build/
+dist/
+
+# =====================================================
+# Machine Learning / Data Science
+# =====================================================
+# Trained models (VERY IMPORTANT)
+backend/models/
+*.joblib
+*.pkl
+*.h5
+*.onnx
+
+# Large datasets (optional – enable if needed)
+datasets/raw/
+datasets/processed/
+*.csv
+*.tsv
+
+# Jupyter
+.ipynb_checkpoints/
+
+# =====================================================
+# Backend (FastAPI / Flask)
+# =====================================================
+backend/__pycache__/
+backend/*.log
+backend/reviews.db
+*.sqlite
+*.db
+
+# =====================================================
+# Frontend (React / Vite / Node)
+# =====================================================
+node_modules/
+dist/
+build/
+.vite/
+.cache/
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+
+# =====================================================
+# Environment & Secrets
+# =====================================================
+.env
+.env.*
+*.env
+
+# =====================================================
+# Logs
+# =====================================================
+logs/
+*.log
+
+# =====================================================
+# OS & Editor
+# =====================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# VS Code
+.vscode/
+.history/
+
+# =====================================================
+# Git
+# =====================================================
+.git/
+.gitignore.swp
+
+# =====================================================
+# Misc
+# =====================================================
+*.zip
+*.tar
+*.tar.gz
+*.rar
