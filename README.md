@@ -1,4 +1,4 @@
-# Fake Review Detection System (NULL_FAKE)
+# Fake Review Detection System 
 
 ## Overview
 NULL_FAKE is a machine learning–based system designed to detect and classify fake online reviews.  
